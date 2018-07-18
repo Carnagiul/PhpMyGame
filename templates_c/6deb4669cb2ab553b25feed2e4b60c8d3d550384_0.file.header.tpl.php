@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-18 17:07:38
+/* Smarty version 3.1.33-dev-5, created on 2018-07-18 23:28:02
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b4f57ba46c850_56147728',
+  'unifunc' => 'content_5b4fb0e2a0bad1_83895165',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6deb4669cb2ab553b25feed2e4b60c8d3d550384' => 
     array (
       0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/header.tpl',
-      1 => 1531926456,
+      1 => 1531948976,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b4f57ba46c850_56147728 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b4fb0e2a0bad1_83895165 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 	<head>
 		<meta charset="utf-8" />
 		<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </title>
-	</head>
-	<body bgcolor="#ffffff">
+		<base href="templates/<?php echo $_smarty_tpl->tpl_vars['tpl']->value;?>
+/" />
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
 <?php }
 }

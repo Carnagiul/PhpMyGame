@@ -1,5 +1,5 @@
 {config_load file="test.conf" section="setup"}
-{include file="$tpl/header.tpl" title=home}
+{include file="$tpl/menu.tpl" title=home}
 
 <PRE>
 
