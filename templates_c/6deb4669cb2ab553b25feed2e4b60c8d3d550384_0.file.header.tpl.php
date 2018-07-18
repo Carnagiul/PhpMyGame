@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-18 23:28:02
+/* Smarty version 3.1.33-dev-5, created on 2018-07-19 00:01:50
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b4fb0e2a0bad1_83895165',
+  'unifunc' => 'content_5b4fb8cea33b54_06363911',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6deb4669cb2ab553b25feed2e4b60c8d3d550384' => 
     array (
       0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/header.tpl',
-      1 => 1531948976,
+      1 => 1531949790,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b4fb0e2a0bad1_83895165 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b4fb8cea33b54_06363911 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 	<head>
 		<meta charset="utf-8" />
