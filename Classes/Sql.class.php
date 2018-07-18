@@ -6,10 +6,15 @@
  * Time: 10:14
  */
 
-define("BDD_HOST", "localhost");
-define("BDD_NOM", "minegamers");
-define("BDD_USER", "piqueur");
-define("BDD_PASS", "");
+define ("_BDD_HOSTNAME_", "localhost");
+define ("_BDD_NAME_", "minegamers");
+define ("_BDD_USERNAME_", "piqueur");
+define ("_BDD_PASSWORD_", "");
+
+define("BDD_HOST", _BDD_HOSTNAME_);
+define("BDD_NOM", _BDD_NAME_);
+define("BDD_USER", _BDD_USERNAME_);
+define("BDD_PASS", _BDD_PASSWORD_);
 
 class Sql
 {
