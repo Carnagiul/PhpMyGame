@@ -1,6 +1,6 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>{$title} - {$Name}</title>
+		<title>{$title}</title>
 	</head>
 	<body bgcolor="#ffffff">
