@@ -1,6 +1,6 @@
 {config_load file="test.conf" section="setup"}
 {include file="$tpl/menu.tpl" title=register}
-
+	{if $is_logged == false}
             <div class="col-lg-12">
                 <div class="ibox ">
                     <div class="ibox-title">
@@ -38,5 +38,8 @@
                     </div>
                 </div>
             </div>
+		{else}
+			Vous etes deja connecte au site
+		{/if}
 
 {include file="$tpl/footer.tpl"}

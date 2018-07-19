@@ -29,6 +29,9 @@ if (isset($_GET["p"]))
 
 include ("Page/" . $page . ".Page.php");
 
+$smarty->assign('base_dir', 'templates/' . $tpl . '/');
+
+
 $smarty->assign('tpl', $tpl);
 $smarty->display('' . $tpl . '/' . $page . '.tpl');
 
