@@ -28,7 +28,7 @@ class User
 
         if ($sql instanceof Sql)
         {
-            $result = $sql->select("phpsim_users", array("id" => $id));
+            $result = $sql->select(Sql::$table_users, array("id" => $id));
             if ($result["datas"])
             {
                 if ($result["datas"]["id"] == $id)
@@ -53,7 +53,7 @@ class User
 
         if ($sql instanceof Sql)
         {
-            $result = $sql->select("phpsim_users", array("nom" => $name));
+            $result = $sql->select(Sql::$table_users, array("nom" => $name));
             if ($result["datas"])
             {
                 if ($result["datas"]["nom"] == $name)

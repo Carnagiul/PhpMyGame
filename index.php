@@ -14,11 +14,24 @@ require_once ("Classes/Building.class.php");
 require_once ("Classes/Credential.trait.php");
 require_once ("Classes/Register.trait.php");
 require_once ("Classes/User.class.php");
+require_once ("Classes/Server.class.php");
+require_once ("Classes/Node.Class.php");
+
+include ("Lang/index.php");
 
 $sql = new Sql();
 $sql->connect();
 $smarty = new Smarty();
+$server = new Server();
 
+if ($_GET["meaculpa"])
+{
+    $user = new User();
+    print_r($user->CredentialLoginMixed("Canargiul", "kzg3pom2dat"));
+}
+
+$server->setRess();
+$server->setBuildings();
 
 $tpl = 'default';
 $page = "home";

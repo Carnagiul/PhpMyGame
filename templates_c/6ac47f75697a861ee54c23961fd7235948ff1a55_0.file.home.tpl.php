@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-19 00:56:54
+/* Smarty version 3.1.33-dev-5, created on 2018-07-20 15:28:23
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b4fc5b6be3ea0_62046015',
+  'unifunc' => 'content_5b51e3773759c7_25383691',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6ac47f75697a861ee54c23961fd7235948ff1a55' => 
     array (
       0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/home.tpl',
-      1 => 1531949304,
+      1 => 1531990170,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b4fc5b6be3ea0_62046015 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b51e3773759c7_25383691 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Users/tonpeyre/Documents/tw/PhpMyGame/smarty/libs/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),1=>array('file'=>'/Users/tonpeyre/Documents/tw/PhpMyGame/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>

@@ -30,7 +30,7 @@ trait Register
         }
         if ($sql instanceof Sql)
         {
-            $request = $sql->select("test", array("mail" => $mail));
+            $request = $sql->select(Sql::$table_users, array("mail" => $mail));
             if ($request["datas"] && $request["datas"]["mail"] == $mail)
             {
                 $this->_register_error[] = "register_email_already_exist";
@@ -52,7 +52,7 @@ trait Register
 
         if ($sql instanceof Sql)
         {
-            $request = $sql->select("test", array("name" => $name));
+            $request = $sql->select(Sql::$table_users, array("name" => $name));
             if ($request["datas"] && $request["datas"]["name"] == $name)
             {
                 $this->_register_error[] = "register_name_already_exist";
@@ -88,7 +88,7 @@ trait Register
         if ($sql instanceof Sql)
         {
             $array = array("name" => $username, "pass" => $this->CredentialHashPass($password), "mail" => $mail);
-            $ret = $sql->insert("test", $array);
+            $ret = $sql->insert(Sql::$table_users, $array);
             var_dump($ret);
             return (0);
         }
