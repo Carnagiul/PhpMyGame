@@ -129,7 +129,11 @@ trait Credential
         {
             $request = $sql->select(Sql::$table_users, array("mail" => $credential, "pass" => $this->CredentialHashPass($password)));
             if ($request["datas"] && $request["datas"]["mail"] == $credential)
+            {
+                $_SESSION["user"]["name"] = $request["datas"]["name"];
+                $_SESSION["user"]["pass"] = $password;
                 return (array("msg" => sprintf($lang["fr"]["user_credential_mail_login_in"], $credential), "value" => 0, "title" => "Succès"));
+            }
             return (array("msg" => sprintf($lang["fr"]["user_credential_not_exist"], $credential), "value" => 1, "title" => "Error"));
         }
         return (array("msg" => sprintf($lang["fr"]["sql_not_connected"]), "value" => -1, "title" => "Error"));
@@ -171,7 +175,11 @@ trait Credential
         {
             $request = $sql->select(Sql::$table_users, array("name" => $credential, "pass" => $this->CredentialHashPass($password)));
             if ($request["datas"] && $request["datas"]["name"] == $credential)
+            {
+                $_SESSION["user"]["name"] = $credential;
+                $_SESSION["user"]["pass"] = $password;
                 return (array("msg" => sprintf($lang["fr"]["user_credential_name_login_in"], $credential), "value" => 0, "title" => "Succès"));
+            }
             return (array("msg" => sprintf($lang["fr"]["user_credential_not_exist"], $credential), "value" => 1, "title" => "Error"));
         }
         return (array("msg" => sprintf($lang["fr"]["sql_not_connected"]), "value" => -1, "title" => "Error"));
@@ -248,6 +256,8 @@ trait Credential
 
         if ($sql instanceof Sql)
         {
+            if (isset($_SESSION["user"]))
+                return ($this->CredentialLoginNameMixed($_SESSION["user"]["name"], $_SESSION["user"]["pass"]));
             if ($this->CredentialIsMail($name) == 0)
                 return ($this->CredentialLoginMailMixed($name, $password));
             if ($this->CredentialIsUsername($name) == 0)
