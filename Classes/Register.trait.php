@@ -89,7 +89,6 @@ trait Register
         {
             $array = array("name" => $username, "pass" => $this->CredentialHashPass($password), "mail" => $mail);
             $ret = $sql->insert(Sql::$table_users, $array);
-            var_dump($ret);
             return (0);
         }
         $this->_register_error[] = "sql_not_connected";
