@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-21 17:10:15
+/* Smarty version 3.1.33-dev-5, created on 2018-07-22 17:03:39
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/visitor/menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b534cd75ad226_48663246',
+  'unifunc' => 'content_5b549ccb500ca8_11170323',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd3226ad3853140b367c1790c0926cacaac57f3a5' => 
     array (
       0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/visitor/menu.tpl',
-      1 => 1532185808,
+      1 => 1532271816,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b534cd75ad226_48663246 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b549ccb500ca8_11170323 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>
 
@@ -29,7 +29,7 @@ $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf"
 		<ul class="nav metismenu" id="side-menu">
 			<li class="nav-header">
 				<div class="dropdown profile-element">
-					<img alt="image" class="rounded-circle" src="<?php echo $_smarty_tpl->tpl_vars['tpl']->value;?>
+					<img alt="image" class="rounded-circle" src="templates/<?php echo $_smarty_tpl->tpl_vars['tpl']->value;?>
 /img/profile_small.jpg"/>
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 						<span class="block m-t-xs font-bold">???</span>
@@ -70,7 +70,7 @@ $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf"
 </span>
 				</li>
 				<li>
-					<a href="login.html">
+					<a href="index.php?p=Login">
 						<i class="fa fa-sign-out"></i> Connect
 					</a>
 				</li>

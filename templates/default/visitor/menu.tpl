@@ -43,7 +43,7 @@
 					<span class="m-r-sm text-muted welcome-message">{$title}</span>
 				</li>
 				<li>
-					<a href="login.html">
+					<a href="index.php?p=Login">
 						<i class="fa fa-sign-out"></i> Connect
 					</a>
 				</li>

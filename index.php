@@ -28,26 +28,15 @@ $set = array("value" => 1);
 
 $smarty->assign("lang", $lang["fr"]);
 
-if (isset($_GET["meaculpa"]))
+if (isset($_SESSION["user"]))
 {
-    if ($_GET["meaculpa"] == "set")
-        $set = $user->CredentialLoginMixed("Canargiul", "kzg3pom2dat");
-    if ($_GET["meaculpa"] == "remove")
+    $set = $user->CredentialLoginMixed($_SESSION["user"]["name"], $_SESSION["user"]["pass"]);
+    if ($set["value"] == 0)
     {
-        echo "<pre>toto</pre>";
-        unset($_SESSION["user"]);
-        $_SESSION["user"] = NULL;
-        $set = array("value" => 1);
+        $user->LoadPlayerByName($_SESSION["user"]["name"]);
+        $smarty->assign("user", $user);
     }
 }
-if (isset($_SESSION["user"]))
-    $set = $user->CredentialLoginMixed($_SESSION["user"]["name"], $_SESSION["user"]["pass"]);
-if ($set["value"] == 0)
-{
-    $user->LoadPlayerByName($_SESSION["user"]["name"]);
-    $smarty->assign("user", $user);
-}
-
 
 $smarty->assign("is_in_game", ($set["value"] == 0) ? true : false);
 

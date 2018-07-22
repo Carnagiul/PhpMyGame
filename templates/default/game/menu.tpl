@@ -142,7 +142,7 @@
 
 
 	                <li>
-	                    <a href="login.html">
+	                    <a href="index.php?p=Logout">
 	                        <i class="fa fa-sign-out"></i> Log out
 	                    </a>
 	                </li>

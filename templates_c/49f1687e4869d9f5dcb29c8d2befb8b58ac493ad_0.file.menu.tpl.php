@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-21 21:21:41
+/* Smarty version 3.1.33-dev-5, created on 2018-07-22 16:39:15
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/game/menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b5387c556ad79_34270045',
+  'unifunc' => 'content_5b54971390b768_03859747',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49f1687e4869d9f5dcb29c8d2befb8b58ac493ad' => 
     array (
       0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/game/menu.tpl',
-      1 => 1532200898,
+      1 => 1532270354,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b5387c556ad79_34270045 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b54971390b768_03859747 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Users/tonpeyre/Documents/tw/PhpMyGame/smarty/libs/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>
@@ -173,7 +173,7 @@ $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf"
 
 
 	                <li>
-	                    <a href="login.html">
+	                    <a href="index.php?p=Logout">
 	                        <i class="fa fa-sign-out"></i> Log out
 	                    </a>
 	                </li>
