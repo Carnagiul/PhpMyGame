@@ -4,7 +4,7 @@
 		<ul class="nav metismenu" id="side-menu">
 			<li class="nav-header">
 				<div class="dropdown profile-element">
-					<img alt="image" class="rounded-circle" src="{$tpl}/img/profile_small.jpg"/>
+					<img alt="image" class="rounded-circle" src="templates/{$tpl}/img/profile_small.jpg"/>
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 						<span class="block m-t-xs font-bold">???</span>
 						<span class="text-muted text-xs block"> Visitor <b class="caret"></b></span>

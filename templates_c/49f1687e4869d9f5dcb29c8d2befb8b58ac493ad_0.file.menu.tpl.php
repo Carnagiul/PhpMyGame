@@ -1,13 +1,42 @@
-{config_load file="test.conf" section="setup"}
+<?php
+/* Smarty version 3.1.33-dev-5, created on 2018-07-21 21:21:41
+  from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/game/menu.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33-dev-5',
+  'unifunc' => 'content_5b5387c556ad79_34270045',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '49f1687e4869d9f5dcb29c8d2befb8b58ac493ad' => 
+    array (
+      0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/game/menu.tpl',
+      1 => 1532200898,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5b5387c556ad79_34270045 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Users/tonpeyre/Documents/tw/PhpMyGame/smarty/libs/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
+$_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
+?>
+
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <img alt="image" class="rounded-circle" src="templates/{$tpl}/img/profile_small.jpg"/>
+                        <img alt="image" class="rounded-circle" src="templates/<?php echo $_smarty_tpl->tpl_vars['tpl']->value;?>
+/img/profile_small.jpg"/>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="block m-t-xs font-bold">{$user->getName()}</span>
-                            <span class="text-muted text-xs block"> {$user->getRank()} <b class="caret"></b></span>
+                            <span class="block m-t-xs font-bold"><?php echo $_smarty_tpl->tpl_vars['user']->value->getName();?>
+</span>
+                            <span class="text-muted text-xs block"> <?php echo $_smarty_tpl->tpl_vars['user']->value->getRank();?>
+ <b class="caret"></b></span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
@@ -22,7 +51,8 @@
                     </div>
                 </li>
                 <li>
-                    <a href="index.php?p=home"><i class="fa fa-th-large"></i> <span class="nav-label">{$lang["node_name"]|capitalize}</span> <span class="fa arrow"></span></a>
+                    <a href="index.php?p=home"><i class="fa fa-th-large"></i> <span class="nav-label"><?php echo smarty_modifier_capitalize($_smarty_tpl->tpl_vars['lang']->value["node_name"]);?>
+</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="index.php?p=Buildings">Les Bátiments</a></li>
                         <li><a href="index.php?p=Storage">Les Ressources</a></li>
@@ -42,7 +72,8 @@
 		        </div>
 	            <ul class="nav navbar-top-links navbar-right">
 	                <li>
-	                    <span class="m-r-sm text-muted welcome-message">{$title}</span>
+	                    <span class="m-r-sm text-muted welcome-message"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</span>
 	                </li>
 	                <li class="dropdown">
 	                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -149,3 +180,5 @@
 	            </ul>
 	        </nav>
 	    </div>
+<?php }
+}

@@ -26,6 +26,8 @@ $server = new Server();
 $user = new User();
 $set = array("value" => 1);
 
+$smarty->assign("lang", $lang["fr"]);
+
 if (isset($_GET["meaculpa"]))
 {
     if ($_GET["meaculpa"] == "set")
@@ -40,6 +42,12 @@ if (isset($_GET["meaculpa"]))
 }
 if (isset($_SESSION["user"]))
     $set = $user->CredentialLoginMixed($_SESSION["user"]["name"], $_SESSION["user"]["pass"]);
+if ($set["value"] == 0)
+{
+    $user->LoadPlayerByName($_SESSION["user"]["name"]);
+    $smarty->assign("user", $user);
+}
+
 
 $smarty->assign("is_in_game", ($set["value"] == 0) ? true : false);
 
