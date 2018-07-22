@@ -12,7 +12,7 @@ if (!(isset($_SESSION["user"])))
     {
         if (isset($_POST["password"]))
         {
-            $set = $user->CredentialLoginMixed("Canargiul", "kzg3pom2dat");
+            $set = $user->CredentialLoginMixed($_POST["name"], $_POST["password"]);
             if ($set["value"] == 0)
             {
                 $user->LoadPlayerByName($_SESSION["user"]["name"]);
