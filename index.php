@@ -69,9 +69,13 @@ $user = new User();
 if ($debug)
 	deb("Create Object User...");
 $set = array("value" => 1);
+if ($debug)
+    deb("Set value \$set with array Value => 1...");
 
 $smarty->assign("lang", $lang["fr"]);
 
+if ($debug)
+    deb("Set smarty with value Lang and value \$lang FR...");
 if (isset($_SESSION["user"]))
 {
     $set = $user->CredentialLoginMixed($_SESSION["user"]["name"], $_SESSION["user"]["pass"]);
@@ -82,10 +86,20 @@ if (isset($_SESSION["user"]))
     }
 }
 
+if ($debug)
+    deb("Connexion on website...");
+
 $smarty->assign("is_in_game", ($set["value"] == 0) ? true : false);
 
+if ($debug)
+    deb("Define on smarty if user is connect...");
 $server->setRess();
+
+if ($debug)
+    deb("Set server ress...");
 $server->setBuildings();
+if ($debug)
+    deb("Set Server buildings ...");
 
 $tpl = 'default';
 $page = "home";
@@ -96,9 +110,14 @@ if (isset($_GET["p"]))
 
 include ("Page/" . $page . ".Page.php");
 
+if ($debug)
+    deb("Include Page...");
 $smarty->assign('base_dir', 'templates/' . $tpl . '/');
 
 
 $smarty->assign('tpl', $tpl);
 $smarty->display('' . $tpl . '/' . $page . '.tpl');
 
+
+if ($debug)
+    deb("Display Page...");
