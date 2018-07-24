@@ -116,6 +116,9 @@ $smarty->assign('base_dir', 'templates/' . $tpl . '/');
 
 
 $smarty->assign('tpl', $tpl);
+
+if ($debug)
+    deb("Assign different value on smarty...");
 $smarty->display('' . $tpl . '/' . $page . '.tpl');
 
 
