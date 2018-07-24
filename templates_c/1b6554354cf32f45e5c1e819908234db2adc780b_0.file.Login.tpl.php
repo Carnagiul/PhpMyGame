@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-21 17:00:16
-  from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/home.tpl' */
+/* Smarty version 3.1.33-dev-5, created on 2018-07-22 16:44:22
+  from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/Login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b534a80102d75_62168800',
+  'unifunc' => 'content_5b54984600fbe2_03654216',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '6ac47f75697a861ee54c23961fd7235948ff1a55' => 
+    '1b6554354cf32f45e5c1e819908234db2adc780b' => 
     array (
-      0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/home.tpl',
-      1 => 1532184979,
+      0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/Login.tpl',
+      1 => 1532270654,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b534a80102d75_62168800 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b54984600fbe2_03654216 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>
 
@@ -29,7 +29,7 @@ if ($_smarty_tpl->tpl_vars['is_in_game']->value == true) {?>
     <?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['tpl']->value)."/game/home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'home'), 0, true);
 }
 if ($_smarty_tpl->tpl_vars['is_in_game']->value == false) {?>
-    <?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['tpl']->value)."/visitor/home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'home'), 0, true);
+    <?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['tpl']->value)."/visitor/login.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'home'), 0, true);
 }
 $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['tpl']->value)."/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 }

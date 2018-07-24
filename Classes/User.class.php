@@ -11,6 +11,8 @@ class User
     use Entity;
     use Register;
 
+    private $_rank;
+
     public function __construct()
     {
         return ;
@@ -28,15 +30,15 @@ class User
 
         if ($sql instanceof Sql)
         {
-            $result = $sql->select("phpsim_users", array("id" => $id));
+            $result = $sql->select(Sql::$table_users, array("id" => $id));
             if ($result["datas"])
             {
                 if ($result["datas"]["id"] == $id)
                 {
                     $this->setId($result["datas"]["id"]);
-                    $this->setName($result["datas"]["nom"]);
+                    $this->setName($result["datas"]["name"]);
                     $this->setDescr($result["datas"]["mail"]);
-                    $this->setImage($result["datas"]["race"]);
+                    $this->setRank($result["datas"]["rank"]);
                     return (sprintf($lang["fr"]["user_id_loaded"], $id));
                 }
                 return (sprintf($lang["fr"]["user_id_not_found"], $id));
@@ -53,15 +55,15 @@ class User
 
         if ($sql instanceof Sql)
         {
-            $result = $sql->select("phpsim_users", array("nom" => $name));
+            $result = $sql->select(Sql::$table_users, array("name" => $name));
             if ($result["datas"])
             {
-                if ($result["datas"]["nom"] == $name)
+                if ($result["datas"]["name"] == $name)
                 {
                     $this->setId($result["datas"]["id"]);
-                    $this->setName($result["datas"]["nom"]);
+                    $this->setName($result["datas"]["name"]);
                     $this->setDescr($result["datas"]["mail"]);
-                    $this->setImage($result["datas"]["race"]);
+                    $this->setRank($result["datas"]["rank"]);
                     return (sprintf($lang["fr"]["user_name_loaded"], $name));
                 }
                 return (sprintf($lang["fr"]["user_name_not_found"], $name));
@@ -87,5 +89,21 @@ class User
             return (getenv('REMOTE_ADDR'));
         else
             return (0);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRank()
+    {
+        return $this->_rank;
+    }
+
+    /**
+     * @param mixed $rank
+     */
+    public function setRank($rank)
+    {
+        $this->_rank = $rank;
     }
 }

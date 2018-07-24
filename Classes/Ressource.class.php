@@ -10,10 +10,10 @@ class Ressource
 {
     use Entity;
 
-    private $_amount;
-    private $_storage;
-    private $_production;
-    private $_cost;
+    private $_amount = 0;
+    private $_storage = 0;
+    private $_production = 0;
+    private $_cost = 0;
 
     /**
      * @param int $amount

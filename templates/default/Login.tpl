@@ -4,6 +4,6 @@
     {include file="$tpl/game/home.tpl" title=home}
 {/if}
 {if $is_in_game == false}
-    {include file="$tpl/visitor/home.tpl" title=home}
+    {include file="$tpl/visitor/login.tpl" title=home}
 {/if}
 {include file="$tpl/footer.tpl"}

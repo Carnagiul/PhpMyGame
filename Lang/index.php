@@ -29,3 +29,4 @@ $lang["fr"]["user_credential_mail_login_in"] = "La connexion avec le credential 
 $lang["fr"]["user_credential_name_login_in"] = "La connexion avec le credential (USERNAME)%s s'est effectué avec succès.";
 $lang["fr"]["user_credential_not_exist"] = "La connexion avec le credential %s ne s'est pas effectué avec succès.";
 $lang["fr"]["user_credential_already_exist"] = "La connexion avec le credential %s ne s'est pas effectué avec succès car vous êtes connecté sous le pseudo %s.";
+$lang["fr"]["node_name"] = "village";
