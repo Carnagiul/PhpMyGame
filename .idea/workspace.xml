@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3f63388-c23e-4d6c-8991-4ef9531c0d92" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Register.trait.php" afterPath="$PROJECT_DIR$/Classes/Register.trait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page/Register.Page.php" afterPath="$PROJECT_DIR$/Page/Register.Page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/default/register.tpl" afterPath="$PROJECT_DIR$/templates/default/register.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/default/visitor/menu.tpl" afterPath="$PROJECT_DIR$/templates/default/visitor/menu.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/0d7a5245c9ec24e00bd88399e95da8ede68c6cd9_0.file.register.tpl.php" afterPath="$PROJECT_DIR$/templates_c/0d7a5245c9ec24e00bd88399e95da8ede68c6cd9_0.file.register.tpl.php" />
-    </list>
+    <list default="true" id="d3f63388-c23e-4d6c-8991-4ef9531c0d92" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +21,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/default/visitor/menu.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -52,8 +45,10 @@
         <entry file="file://$PROJECT_DIR$/Classes/Register.trait.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="687">
-              <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-              <folding />
+              <caret line="112" column="12" lean-forward="false" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+              <folding>
+                <marker date="1532463626969" expanded="true" signature="112:3162" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,6 +58,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="22" column="105" lean-forward="false" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/User.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -242,7 +247,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17791000" />
+    <option name="totallyTimeSpent" value="17877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -451,14 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/User.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="40" column="61" lean-forward="false" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lang/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -614,8 +611,10 @@
     <entry file="file://$PROJECT_DIR$/Classes/Register.trait.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="687">
-          <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-          <folding />
+          <caret line="112" column="12" lean-forward="false" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+          <folding>
+            <marker date="1532463626969" expanded="true" signature="112:3162" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -631,6 +630,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/User.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
       </provider>
