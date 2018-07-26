@@ -1,3 +1,22 @@
+
+			<div class="row">
+				{foreach from=$debug_datas item=d}
+					<div class="col-lg-4">
+						<div class="ibox">
+							<div class="ibox-title">
+								<span class="label label-primary float-right">line Debug {$d["line"]}</span>
+								<h5>{$d["file"]}</h5>
+							</div>
+							<div class="ibox-content">
+								<h4>Description</h4>
+								<p>
+									{$d["msg"]}
+								</p>
+							</div>
+						</div>
+					</div>
+				{/foreach}
+			</div>
 		</div>
 	    <script src="{$base_dir}js/jquery-3.1.1.min.js"></script>
 	    <script src="{$base_dir}js/popper.min.js"></script>

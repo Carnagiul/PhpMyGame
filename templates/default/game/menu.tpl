@@ -149,3 +149,20 @@
 	            </ul>
 	        </nav>
 	    </div>
+		<div class="row">
+
+            {foreach from=$NodeRess item=ress}
+
+			<div class="col-lg-6">
+				<div class="widget navy-bg p-lg text-center">
+					<div class="m-b-md">
+						<h1 class="m-xs">{$ress->getName()}</h1>
+						<h3 class="font-bold no-margins m-xs">
+                            {$ress->getRessAmount()} / {$ress->getRessStorage()}
+						</h3>
+						<small>{$ress->getRessProduction()} / s</small>
+					</div>
+				</div>
+			</div>
+            {/foreach}
+		</div>

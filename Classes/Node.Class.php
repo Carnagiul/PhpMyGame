@@ -13,6 +13,7 @@ class Node
 
     private $_Ress;
     private $_Buildings;
+    private $_LastUpdate = 0;
 
     public function __construct()
     {
@@ -173,17 +174,17 @@ class Node
 
     public function setNodeRessJsonString(String $json)
     {
-        $data = json_decode($json);
+        $data = json_decode($json, true);
 
         if (is_array($data))
         {
             foreach ($data as $title => $value)
             {
-                if ($title == "amount")
+                if ($title == "Actual")
                     $this->setNodeRessAmountArray($value);
-                if ($title == "production" || $title == "prod")
+                if ($title == "Production")
                     $this->setNodeRessProductionArray($value);
-                if ($title == "storage")
+                if ($title == "Storage")
                     $this->setNodeRessStorageArray($value);
             }
         }
@@ -226,7 +227,7 @@ class Node
 
     public function setNodeBuildingJson(String $json)
     {
-       $decode = json_decode($json);
+       $decode = json_decode($json, true);
        if (is_array($decode))
        {
            foreach ($decode as $item)
@@ -236,9 +237,90 @@ class Node
                    $b = NULL;
                    $b = $this->getBuildingById(intval($item["id"]));
                    if (isset($item["level"]))
+                   {
                        $b->setActualLevel(intval($item["level"]));
+                       $b->calcRessPerLevel(intval($item["level"]));
+                   }
                }
            }
        }
     }
+
+    public function setNodeDataWithId(int $id)
+    {
+        global $sql;
+
+        $result = $sql->select(Sql::$table_node, array("id" => $id));
+        if ($result["datas"])
+        {
+            $this->setNodeBuildingJson($result["datas"]["buildings"]);
+            $this->setNodeRessJsonString($result["datas"]["ressources"]);
+            $this->setName($result["datas"]["name"]);
+            $this->setLastUpdate($result["datas"]["last_update"]);
+            $this->AddProductionOnBase();
+            $this->setId($id);
+
+        }
+    }
+
+    public function updateNodeData()
+    {
+        global $sql;
+
+        if ($this->getId() > 0)
+        {
+            $buildings = NULL;
+            foreach ($this->_Buildings as $b)
+            {
+                if ($b instanceof Building)
+                    $buildings[] = array("id" => $b->getId(), "level" => $b->getActualLevel());
+            }
+            $prod = NULL;
+            $actual = NULL;
+            $storage = NULL;
+            foreach ($this->_Ress as $ress)
+            {
+                if ($ress instanceof Ressource)
+                {
+                 $prod[] = $ress->getRessProduction();
+                 $storage[] = $ress->getRessStorage();
+                 $actual[] = $ress->getRessAmount();
+                }
+            }
+            $result_ress = array("Storage" => $storage, "Production" => $prod, "Actual" => $actual);
+            $json_ress = json_encode($result_ress);
+            $json_building = json_encode($buildings);
+            $request = $sql->update(Sql::$table_node, array("name" => $this->getName(), "buildings" => $json_building, "ressources" => $json_ress, "last_update" => time()), array("id" => $this->getId()));
+            return ($request);
+        }
+    }
+
+    /**
+     * @return int
+     */
+    public function getLastUpdate(): int
+    {
+        return $this->_LastUpdate;
+    }
+
+    /**
+     * @param int $LastUpdate
+     */
+    public function setLastUpdate(int $LastUpdate)
+    {
+        $this->_LastUpdate = $LastUpdate;
+    }
+
+    private function AddProductionOnBase()
+    {
+        foreach ($this->_Ress as $ress)
+        {
+            if ($ress instanceof Ressource)
+            {
+                $prod = ($ress->getRessProduction()) * (time() - $this->getLastUpdate());
+                $ress->addRessAmount($prod);
+            }
+        }
+    }
+
 }

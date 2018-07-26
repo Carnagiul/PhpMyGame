@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-19 02:46:41
+/* Smarty version 3.1.33-dev-5, created on 2018-07-26 17:48:55
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b4fdf716f2fc5_34553026',
+  'unifunc' => 'content_5b59ed67b40023_57008291',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e41de87becf10db5fd4de6056851652068425af3' => 
     array (
       0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/footer.tpl',
-      1 => 1531961196,
+      1 => 1532620134,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,37 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b4fdf716f2fc5_34553026 (Smarty_Internal_Template $_smarty_tpl) {
-?>		</div>
+function content_5b59ed67b40023_57008291 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+			<div class="row">
+				<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['debug_datas']->value, 'd');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['d']->value) {
+?>
+					<div class="col-lg-4">
+						<div class="ibox">
+							<div class="ibox-title">
+								<span class="label label-primary float-right">line Debug <?php echo $_smarty_tpl->tpl_vars['d']->value["line"];?>
+</span>
+								<h5><?php echo $_smarty_tpl->tpl_vars['d']->value["file"];?>
+</h5>
+							</div>
+							<div class="ibox-content">
+								<h4>Description</h4>
+								<p>
+									<?php echo $_smarty_tpl->tpl_vars['d']->value["msg"];?>
+
+								</p>
+							</div>
+						</div>
+					</div>
+				<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+			</div>
+		</div>
 	    <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['base_dir']->value;?>
 js/jquery-3.1.1.min.js"><?php echo '</script'; ?>

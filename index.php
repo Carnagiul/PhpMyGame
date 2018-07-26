@@ -1,10 +1,22 @@
 <?php
 
-$debug = true;
-
-function deb(string $str)
+define ("_DEBUG_", false);
+define ("_DEBUG_INCLUDE_", false);
+define ("_DEBUG_SQL_", false);
+define ("_DEBUG_SMARTY_", false);
+define ("_DEBUG_SERVER_", false);
+define ("_DEBUG_RESS_", false);
+define ("_DEBUG_USER_", false);
+define ("_DEBUG_NODE_", false);
+$debug_datas = NULL;
+function deb(string $str, string $file = "index.php", int $line = 0, int $gravity = 0)
 {
-	print ("Load line " . $str . " <br />");
+    global $debug_datas;
+
+    $debug = array ("gravity" => $gravity, "file" => $file, "line" => $line);
+    if ($gravity == 0)
+        $debug["msg"] = "Load line " . $str . " success<br />";
+    $debug_datas[] = $debug;
 }
 
 session_start();
@@ -12,70 +24,49 @@ session_start();
 error_reporting(E_ALL);
 
 require_once ("smarty/libs/Smarty.class.php");
-if ($debug)
-	deb("Require_once Smarty...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Smarty...", "index.php", 19,0);
+
 require_once ("Classes/NotificationInspina.Class.php");
-if ($debug)
-	deb("Require_once NotificationInspina...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once NotificationInspina...", "index.php", 22,0);
 require_once ("Classes/Sql.class.php");
-if ($debug)
-	deb("Require_once Sql...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Sql...", "index.php", 24,0);
 require_once ("Classes/Entity.trait.php");
-if ($debug)
-	deb("Require_once Entity...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Entity...", "index.php", 26,0);
 require_once ("Classes/Ressource.class.php");
-if ($debug)
-	deb("Require_once Ressource...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Ressource...", "index.php", 28,0);
 require_once ("Classes/Points.trait.php");
-if ($debug)
-	deb("Require_once Point...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Point...", "index.php", 30,0);
 require_once ("Classes/Building.class.php");
-if ($debug)
-	deb("Require_once Building...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Building...", "index.php", 32,0);
 require_once ("Classes/Credential.trait.php");
-if ($debug)
-	deb("Require_once Credential...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Credential...", "index.php", 34,0);
 require_once ("Classes/Register.trait.php");
-if ($debug)
-	deb("Require_once Register...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Register...", "index.php", 36,0);
 require_once ("Classes/User.class.php");
-if ($debug)
-	deb("Require_once User...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once User...", "index.php", 38,0);
 require_once ("Classes/Server.class.php");
-if ($debug)
-	deb("Require_once Server...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Server...", "index.php", 40,0);
 require_once ("Classes/Node.Class.php");
-if ($debug)
-	deb("Require_once Node...");
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Node...", "index.php", 42,0);
 
 include ("Lang/index.php");
-if ($debug)
-	deb("Require_once Lang...");
-
+if (_DEBUG_INCLUDE_ || _DEBUG_) deb("Require_once Lang...", "index.php", 45,0);
 $sql = new Sql();
-if ($debug)
-	deb("Create SQL object...");
+if (_DEBUG_ || _DEBUG_SQL_) deb("Create SQL object...", "index.php", 47,0);
 
 $sql->connect();
-if ($debug)
-	deb("Connect to SQL...");
+if (_DEBUG_ || _DEBUG_SQL_) deb("Connect to SQL...", "index.php", 50,0);
 $smarty = new Smarty();
-if ($debug)
-	deb("Create Object Smarty...");
+if (_DEBUG_ || _DEBUG_SMARTY_) deb("Create Object Smarty...", "index.php", 52,0);
 $server = new Server();
-if ($debug)
-	deb("Create Object Server...");
+if (_DEBUG_ || _DEBUG_SERVER_) deb("Create Object Server...", "index.php", 54,0);
 $user = new User();
-if ($debug)
-	deb("Create Object User...");
+if (_DEBUG_ || _DEBUG_USER_) deb("Create Object User...", "index.php", 56,0);
 $set = array("value" => 1);
-if ($debug)
-    deb("Set value \$set with array Value => 1...");
 
 $smarty->assign("lang", $lang["fr"]);
 
-if ($debug)
-    deb("Set smarty with value Lang and value \$lang FR...");
+if (_DEBUG_) deb("Set smarty with value Lang and value \$lang FR...", "index.php", 60,0);
 if (isset($_SESSION["user"]))
 {
     $set = $user->CredentialLoginMixed($_SESSION["user"]["name"], $_SESSION["user"]["pass"]);
@@ -86,23 +77,20 @@ if (isset($_SESSION["user"]))
     }
 }
 
-if ($debug)
-    deb("Connexion on website...");
+if (_DEBUG_) deb("Connexion on website...", "index.php", 73,0);
 
 $smarty->assign("is_in_game", ($set["value"] == 0) ? true : false);
 
-if ($debug)
-    deb("Define on smarty if user is connect...");
+if (_DEBUG_) deb("Define on smarty if user is connect...", "index.php", 75,0);
 $server->setRess();
 
-if ($debug)
-    deb("Set server ress...");
+if (_DEBUG_ || _DEBUG_SERVER_) deb("Set server ress...", "index.php", 78,0);
 $server->setBuildings();
-if ($debug)
-    deb("Set Server buildings ...");
+if (_DEBUG_ || _DEBUG_SERVER_) deb("Set Server buildings ...", "index.php", 81,0);
 
 $tpl = 'default';
 $page = "Home";
+$node = NULL;
 
 if (isset($_GET["p"]))
 	if (file_exists("Page/" . ucfirst(strtolower($_GET["p"])) . ".Page.php"))
@@ -110,17 +98,23 @@ if (isset($_GET["p"]))
 
 include ("Page/" . $page . ".Page.php");
 
-if ($debug)
-    deb("Include Page...");
+if (_DEBUG_ || _DEBUG_INCLUDE_) deb("Include Page...", "index.php", 92,0);
 $smarty->assign('base_dir', 'templates/' . $tpl . '/');
 
 
 $smarty->assign('tpl', $tpl);
 
-if ($debug)
-    deb("Assign different value on smarty...");
+
+if (isset($node) && $node instanceof Node)
+{
+    $node->updateNodeData();
+    if (_DEBUG_ || _DEBUG_NODE_) deb("Update Node Data....", "index.php", 105,0);
+    $smarty->assign("NodeRess", $node->getRess());
+}
+
+
+if (_DEBUG_ || _DEBUG_SMARTY_) deb("Display Page...", "index.php", 111,0);
+$smarty->assign("debug_datas", $debug_datas);
+
 $smarty->display('' . $tpl . '/' . $page . '.tpl');
 
-
-if ($debug)
-    deb("Display Page...");

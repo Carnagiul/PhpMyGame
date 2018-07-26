@@ -18,7 +18,7 @@ class Building
 	private $_Time;
 	private $_ProgressTime;
 	private $_CalculateTime;
-	private $_ActualLevel;
+	private $_ActualLevel = 0;
 	private $_MaxLevel;
 	private $_InstantBuild = false;
 	private $_InfiniteBuilding = false;
