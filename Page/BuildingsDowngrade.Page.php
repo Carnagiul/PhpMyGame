@@ -6,14 +6,8 @@
  * Time: 13:28
  */
 
-if (isset($_SESSION["user"])) {
-    if (!(isset($node)))
-    {
-        $node = new Node();
-        $node->setNodeDataWithId(1);
-    }
-
-
+if (isset($_SESSION["user"]) && isset($user) && isset($node))
+{
     if (isset($_GET["ajax"]) && $_GET["ajax"] == "on") {
         if (isset($_GET["id"])) {
             $b = NULL;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-26 18:27:09
+/* Smarty version 3.1.33-dev-5, created on 2018-07-26 19:03:48
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/game/menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b59f65de84bc0_28607558',
+  'unifunc' => 'content_5b59fef4acd9c5_90189806',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b59f65de84bc0_28607558 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b59fef4acd9c5_90189806 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Users/tonpeyre/Documents/tw/PhpMyGame/smarty/libs/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>

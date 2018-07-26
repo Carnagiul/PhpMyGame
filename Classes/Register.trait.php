@@ -84,11 +84,35 @@ trait Register
     private function RegisterUser(string $username, string $password, string $mail): int
     {
         global $sql;
+        global $server;
 
         if ($sql instanceof Sql)
         {
             $array = array("name" => $username, "pass" => $this->CredentialHashPass($password), "mail" => $mail);
             $ret = $sql->insert(Sql::$table_users, $array);
+            $user = $sql->select(Sql::$table_users, array("name" => $username));
+
+            $b = NULL;
+            foreach ($server->getBuildings() as $building)
+            {
+                if ($building instanceof Building)
+                    $b[] = array("id" => $building->getId(), "level" => 0);
+            }
+            $r = NULL;
+            foreach ($server->getRess() as $ress)
+            {
+                if ($ress instanceof Ressource)
+                {
+                    $r["Amount"][] = 1000;
+                    $r["Storage"][] = 1000;
+                    $r["Production"][] = 10;
+                }
+            }
+
+            $array2 = array("name" => "Village de " . $username, "buildings" => json_encode($b), "ressources" => json_encode($r), "last_update" => time(), "owner" => $user["datas"]["id"]);
+            $ret2 = $sql->insert(Sql::$table_node, $array2);
+            $node = $sql->select(Sql::$table_node, array("owner" => $user["datas"]["id"]));
+            $ret3  =$sql->update(Sql::$table_users, array("actual_node" => $node["datas"]["id"]), array("id" => $user["datas"]["id"]));
             return (0);
         }
         $this->_register_error[] = "sql_not_connected";

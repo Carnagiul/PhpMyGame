@@ -1,13 +1,7 @@
 <?php
 
-if (isset($_SESSION["user"]))
+if (isset($_SESSION["user"]) && isset($user) && isset($node))
 {
-    if (!(isset($node)))
-    {
-        $node = new Node();
-        $node->setNodeDataWithId(1);
-    }
-
     foreach ($node->getBuildings() as $building)
     {
         if ($building instanceof Building)

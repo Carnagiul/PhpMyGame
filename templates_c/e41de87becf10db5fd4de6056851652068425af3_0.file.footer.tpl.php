@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-26 17:48:55
+/* Smarty version 3.1.33-dev-5, created on 2018-07-26 19:03:48
   from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b59ed67b40023_57008291',
+  'unifunc' => 'content_5b59fef4b241c6_58762804',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b59ed67b40023_57008291 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b59fef4b241c6_58762804 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 			<div class="row">
 				<?php

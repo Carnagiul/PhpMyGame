@@ -8,7 +8,11 @@ define ("_DEBUG_SERVER_", false);
 define ("_DEBUG_RESS_", false);
 define ("_DEBUG_USER_", false);
 define ("_DEBUG_NODE_", false);
+
+
 $debug_datas = NULL;
+$node = NULL;
+
 function deb(string $str, string $file = "index.php", int $line = 0, int $gravity = 0)
 {
     global $debug_datas;
@@ -66,7 +70,12 @@ $set = array("value" => 1);
 
 $smarty->assign("lang", $lang["fr"]);
 
-if (_DEBUG_) deb("Set smarty with value Lang and value \$lang FR...", "index.php", 60,0);
+
+$server->setRess();
+if (_DEBUG_ || _DEBUG_SERVER_) deb("Set server ress...", "index.php", 70,0);
+$server->setBuildings();
+if (_DEBUG_ || _DEBUG_SERVER_) deb("Set Server buildings ...", "index.php", 72,0);
+
 if (isset($_SESSION["user"]))
 {
     $set = $user->CredentialLoginMixed($_SESSION["user"]["name"], $_SESSION["user"]["pass"]);
@@ -74,23 +83,19 @@ if (isset($_SESSION["user"]))
     {
         $user->LoadPlayerByName($_SESSION["user"]["name"]);
         $smarty->assign("user", $user);
+        $node = new Node();
+        $node->setNodeDataWithId($user->getActualNode());
     }
 }
 
-if (_DEBUG_) deb("Connexion on website...", "index.php", 73,0);
+if (_DEBUG_) deb("Connexion on website...", "index.php", 87,0);
 
 $smarty->assign("is_in_game", ($set["value"] == 0) ? true : false);
 
-if (_DEBUG_) deb("Define on smarty if user is connect...", "index.php", 75,0);
-$server->setRess();
-
-if (_DEBUG_ || _DEBUG_SERVER_) deb("Set server ress...", "index.php", 78,0);
-$server->setBuildings();
-if (_DEBUG_ || _DEBUG_SERVER_) deb("Set Server buildings ...", "index.php", 81,0);
+if (_DEBUG_) deb("Define on smarty if user is connect...", "index.php", 91,0);
 
 $tpl = 'default';
 $page = "Home";
-$node = NULL;
 
 if (isset($_GET["p"]))
 	if (file_exists("Page/" . ucfirst(strtolower($_GET["p"])) . ".Page.php"))
@@ -98,22 +103,25 @@ if (isset($_GET["p"]))
 
 include ("Page/" . $page . ".Page.php");
 
-if (_DEBUG_ || _DEBUG_INCLUDE_) deb("Include Page...", "index.php", 92,0);
+if (_DEBUG_ || _DEBUG_INCLUDE_) deb("Include Page...", "index.php", 103,0);
 $smarty->assign('base_dir', 'templates/' . $tpl . '/');
 
 
 $smarty->assign('tpl', $tpl);
 
 
-if (isset($node) && $node instanceof Node)
+if (isset($node))
 {
-    $node->updateNodeData();
-    if (_DEBUG_ || _DEBUG_NODE_) deb("Update Node Data....", "index.php", 105,0);
-    $smarty->assign("NodeRess", $node->getRess());
+    if ($node instanceof Node)
+    {
+        $node->updateNodeData();
+        if (_DEBUG_ || _DEBUG_NODE_) deb("Update Node Data....", "index.php", 113,0);
+        $smarty->assign("NodeRess", $node->getRess());
+    }
 }
 
 
-if (_DEBUG_ || _DEBUG_SMARTY_) deb("Display Page...", "index.php", 111,0);
+if (_DEBUG_ || _DEBUG_SMARTY_) deb("Display Page...", "index.php", 119,0);
 $smarty->assign("debug_datas", $debug_datas);
 
 $smarty->display('' . $tpl . '/' . $page . '.tpl');

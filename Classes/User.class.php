@@ -12,6 +12,7 @@ class User
     use Register;
 
     private $_rank;
+    private $_ActualNode;
 
     public function __construct()
     {
@@ -39,6 +40,7 @@ class User
                     $this->setName($result["datas"]["name"]);
                     $this->setDescr($result["datas"]["mail"]);
                     $this->setRank($result["datas"]["rank"]);
+                    $this->setActualNode($result["datas"]["actual_node"]);
                     return (sprintf($lang["fr"]["user_id_loaded"], $id));
                 }
                 return (sprintf($lang["fr"]["user_id_not_found"], $id));
@@ -64,6 +66,7 @@ class User
                     $this->setName($result["datas"]["name"]);
                     $this->setDescr($result["datas"]["mail"]);
                     $this->setRank($result["datas"]["rank"]);
+                    $this->setActualNode($result["datas"]["actual_node"]);
                     return (sprintf($lang["fr"]["user_name_loaded"], $name));
                 }
                 return (sprintf($lang["fr"]["user_name_not_found"], $name));
@@ -105,5 +108,21 @@ class User
     public function setRank($rank)
     {
         $this->_rank = $rank;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getActualNode()
+    {
+        return $this->_ActualNode;
+    }
+
+    /**
+     * @param mixed $ActualNode
+     */
+    public function setActualNode($ActualNode)
+    {
+        $this->_ActualNode = $ActualNode;
     }
 }
