@@ -47,10 +47,11 @@ if (isset($_SESSION["user"]) && isset($user) && isset($node)) {
                             }
                         }
                         if ($b->isInstantBuild()) {
-                            $b->setActualLevel($b->getActualLevel() + 1);
+                            $b->ConstructBuilding();
                         } else {
-                            $b->setActualLevel($b->getActualLevel() + 1);
+                            $b->ConstructBuilding();
                         }
+
                     }
                 }
             }

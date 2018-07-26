@@ -19,7 +19,13 @@ if (isset($_SESSION["user"]) && isset($user) && isset($node))
             if ($b != NULL)
             {
                 if ($b->getActualLevel() >= 1)
-                    $b->setActualLevel($b->getActualLevel() - 1);
+                {
+                    if ($b->isInstantBuild()) {
+                        $b->DestructBuilding();
+                    } else {
+                        $b->DestructBuilding();
+                    }
+                }
             }
         }
     }

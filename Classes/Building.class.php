@@ -374,4 +374,58 @@ class Building
 		if ($this->getActualLevel() > 0)
 			$this->_ActualLevel--;
 	}
+
+    public function ConstructBuilding(): void
+    {
+        global $node;
+
+        $this->calcRessPerLevel($this->getActualLevel());
+        $prod_before = NULL;
+        foreach ($this->getCalcRess() as $CalcBefore)
+            $prod_before[] = $CalcBefore->getRessProduction();
+        $this->setActualLevel($this->getActualLevel() + 1);
+        $this->calcRessPerLevel($this->getActualLevel());
+        $prod_after = NULL;
+        foreach ($this->getCalcRess() as $CalcAfter)
+            $prod_after[] = $CalcAfter->getRessProduction();
+        $i = 0;
+        if ($node instanceof Node)
+        {
+            foreach ($node->getRess() as $ress)
+            {
+                if ($ress instanceof Ressource)
+                {
+                    $ress->addRessProduction($prod_after[$i] - $prod_before[$i]);
+                    $i++;
+                }
+            }
+        }
+    }
+
+    public function DestructBuilding(): void
+    {
+        global $node;
+
+        $this->calcRessPerLevel($this->getActualLevel());
+        $prod_before = NULL;
+        foreach ($this->getCalcRess() as $CalcBefore)
+            $prod_before[] = $CalcBefore->getRessProduction();
+        $this->setActualLevel($this->getActualLevel() - 1);
+        $this->calcRessPerLevel($this->getActualLevel());
+        $prod_after = NULL;
+        foreach ($this->getCalcRess() as $CalcAfter)
+            $prod_after[] = $CalcAfter->getRessProduction();
+        $i = 0;
+        if ($node instanceof Node)
+        {
+            foreach ($node->getRess() as $ress)
+            {
+                if ($ress instanceof Ressource)
+                {
+                    $ress->addRessProduction($prod_after[$i] - $prod_before[$i]);
+                    $i++;
+                }
+            }
+        }
+    }
 }
