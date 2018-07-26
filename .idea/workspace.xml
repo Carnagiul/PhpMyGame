@@ -43,17 +43,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Building.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Building.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/Building.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-100">
-              <caret line="377" column="20" lean-forward="false" selection-start-line="377" selection-start-column="20" selection-end-line="377" selection-end-column="20" />
+            <state relative-caret-position="51">
+              <caret line="184" column="17" lean-forward="true" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Buildingsdowngrade.Page.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Buildingsdowngrade.Page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Page/Buildingsdowngrade.Page.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -76,14 +76,19 @@
       <file leaf-file-name="Ressource.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Ressource.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="69" column="35" lean-forward="false" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+            <state relative-caret-position="243">
+              <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getRessSt</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -125,8 +130,8 @@
         <option value="$PROJECT_DIR$/Page/Buildingdowngrade.php" />
         <option value="$PROJECT_DIR$/Page/Buildingsupgrade.Page.php" />
         <option value="$PROJECT_DIR$/Classes/Ressource.class.php" />
-        <option value="$PROJECT_DIR$/Classes/Building.class.php" />
         <option value="$PROJECT_DIR$/Page/Buildingsdowngrade.Page.php" />
+        <option value="$PROJECT_DIR$/Classes/Building.class.php" />
       </list>
     </option>
   </component>
@@ -227,7 +232,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30659000" />
+    <option name="totallyTimeSpent" value="31965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -642,22 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Ressource.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="69" column="35" lean-forward="false" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Page/Buildings.Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/default/game/menu.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1814">
@@ -674,14 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Building.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="377" column="20" lean-forward="false" selection-start-line="377" selection-start-column="20" selection-end-line="377" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Page/Buildingsupgrade.Page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -690,10 +671,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Page/Buildings.Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Page/Buildingsdowngrade.Page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Ressource.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Building.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="184" column="17" lean-forward="true" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="17" />
           <folding />
         </state>
       </provider>

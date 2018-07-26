@@ -381,13 +381,21 @@ class Building
 
         $this->calcRessPerLevel($this->getActualLevel());
         $prod_before = NULL;
+        $storage_before = NULL;
         foreach ($this->getCalcRess() as $CalcBefore)
+        {
             $prod_before[] = $CalcBefore->getRessProduction();
+            $storage_before[] = $CalcBefore->getRessStorage();
+        }
         $this->setActualLevel($this->getActualLevel() + 1);
         $this->calcRessPerLevel($this->getActualLevel());
         $prod_after = NULL;
+        $storage_after = NULL;
         foreach ($this->getCalcRess() as $CalcAfter)
+        {
             $prod_after[] = $CalcAfter->getRessProduction();
+            $storage_after[] = $CalcAfter->getRessStorage();
+        }
         $i = 0;
         if ($node instanceof Node)
         {
@@ -396,6 +404,7 @@ class Building
                 if ($ress instanceof Ressource)
                 {
                     $ress->addRessProduction($prod_after[$i] - $prod_before[$i]);
+                    $ress->addRessStorage($storage_after[$i] - $storage_before[$i]);
                     $i++;
                 }
             }
@@ -408,13 +417,21 @@ class Building
 
         $this->calcRessPerLevel($this->getActualLevel());
         $prod_before = NULL;
+        $storage_before = NULL;
         foreach ($this->getCalcRess() as $CalcBefore)
+        {
             $prod_before[] = $CalcBefore->getRessProduction();
+            $storage_before[] = $CalcBefore->getRessStorage();
+        }
         $this->setActualLevel($this->getActualLevel() - 1);
         $this->calcRessPerLevel($this->getActualLevel());
         $prod_after = NULL;
+        $storage_after = NULL;
         foreach ($this->getCalcRess() as $CalcAfter)
+        {
             $prod_after[] = $CalcAfter->getRessProduction();
+            $storage_after[] = $CalcAfter->getRessStorage();
+        }
         $i = 0;
         if ($node instanceof Node)
         {
@@ -423,6 +440,7 @@ class Building
                 if ($ress instanceof Ressource)
                 {
                     $ress->addRessProduction($prod_after[$i] - $prod_before[$i]);
+                    $ress->addRessStorage($storage_after[$i] - $storage_before[$i]);
                     $i++;
                 }
             }
