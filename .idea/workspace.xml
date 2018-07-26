@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3f63388-c23e-4d6c-8991-4ef9531c0d92" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/0d7a5245c9ec24e00bd88399e95da8ede68c6cd9_0.file.register.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/0e8dd2d0171697a2fe85fdff1c61c82ec9965090_0.file.Register.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/1b6554354cf32f45e5c1e819908234db2adc780b_0.file.Login.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/1ec03f70331a59ed67ea88e1069e77ea23f97dc7_0.file.login.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/6ac47f75697a861ee54c23961fd7235948ff1a55_0.file.home.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/79930c605c643d7afc01327efaf86d4a1c643ef0_0.file.register.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/957fd710ab2cbb671b76f9a4f88c3f8fc6263c1e_0.file.header.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/9c9b6a0d1180192c4a9a9356a9ddb1e177719cef_0.file.footer.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/b9feb0c875621fdf20d9434ed1c02490635f3e69_0.file.Logout.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/d167a9682c69f6ca739f71c33686716dd6242f36_0.file.home.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/d3226ad3853140b367c1790c0926cacaac57f3a5_0.file.menu.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/d630cb378f68f2762162d68d473e3c6407b03b72_0.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/ff2215aca0d2f83eb1d9fc5995dab0cb97b0738f_0.file.index.tpl.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Register.trait.php" afterPath="$PROJECT_DIR$/Classes/Register.trait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/User.class.php" afterPath="$PROJECT_DIR$/Classes/User.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page/Buildings.Page.php" afterPath="$PROJECT_DIR$/Page/Buildings.Page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page/BuildingsDowngrade.Page.php" afterPath="$PROJECT_DIR$/Page/BuildingsDowngrade.Page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Page/BuildingsUpgrade.Page.php" afterPath="$PROJECT_DIR$/Page/BuildingsUpgrade.Page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/1b52b9ae22b85b76fe236abf9b745d8de6a56c79_6.file.test.conf.php" afterPath="$PROJECT_DIR$/templates_c/1b52b9ae22b85b76fe236abf9b745d8de6a56c79_6.file.test.conf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/49f1687e4869d9f5dcb29c8d2befb8b58ac493ad_0.file.menu.tpl.php" afterPath="$PROJECT_DIR$/templates_c/49f1687e4869d9f5dcb29c8d2befb8b58ac493ad_0.file.menu.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/6deb4669cb2ab553b25feed2e4b60c8d3d550384_0.file.header.tpl.php" afterPath="$PROJECT_DIR$/templates_c/6deb4669cb2ab553b25feed2e4b60c8d3d550384_0.file.header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/89ad1a13ab097352d23d35e693e2223b6095d8ec_0.file.Buildings.tpl.php" afterPath="$PROJECT_DIR$/templates_c/89ad1a13ab097352d23d35e693e2223b6095d8ec_0.file.Buildings.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/8c9cecc4e82475f14b5df87de8ab08c95426b59b_0.file.home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/8c9cecc4e82475f14b5df87de8ab08c95426b59b_0.file.home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/97930c7ce908e74ffcccfacf14da58145bbdc32b_0.file.menu.tpl.php" afterPath="$PROJECT_DIR$/templates_c/97930c7ce908e74ffcccfacf14da58145bbdc32b_0.file.menu.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/9c2c0209953dc0521fab7b222eee7fbf59079cca_0.file.Home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/9c2c0209953dc0521fab7b222eee7fbf59079cca_0.file.Home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/e41de87becf10db5fd4de6056851652068425af3_0.file.footer.tpl.php" afterPath="$PROJECT_DIR$/templates_c/e41de87becf10db5fd4de6056851652068425af3_0.file.footer.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/ed3cc42b0731459845a44979a97858cd48a0c533_0.file.buildings.tpl.php" afterPath="$PROJECT_DIR$/templates_c/ed3cc42b0731459845a44979a97858cd48a0c533_0.file.buildings.tpl.php" />
-    </list>
+    <list default="true" id="d3f63388-c23e-4d6c-8991-4ef9531c0d92" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,93 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ressource.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/Ressource.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="103" column="37" lean-forward="false" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menu.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/default/game/menu.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
               <caret line="155" column="32" lean-forward="false" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Buildings.Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Page/Buildings.Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildingsDowngrade.Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Page/BuildingsDowngrade.Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildingsUpgrade.Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Page/BuildingsUpgrade.Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.trait.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/Register.trait.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="114" column="135" lean-forward="false" selection-start-line="114" selection-start-column="135" selection-end-line="114" selection-end-column="135" />
-              <folding>
-                <marker date="1532624290674" expanded="true" signature="112:4301" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Node.Class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/Node.Class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3420">
-              <caret line="254" column="9" lean-forward="true" selection-start-line="254" selection-start-column="9" selection-end-line="254" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/User.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="42" column="70" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -172,6 +61,8 @@
         <option value="$PROJECT_DIR$/Page/BuildingsUpgrade.Page.php" />
         <option value="$PROJECT_DIR$/Classes/Register.trait.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/backup_sql/V0.0.1.sql" />
+        <option value="$PROJECT_DIR$/Page/Buildingdowngrade.php" />
       </list>
     </option>
   </component>
@@ -211,39 +102,6 @@
             <path>
               <item name="PhpMyGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="PhpMyGame" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PhpMyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhpMyGame" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PhpMyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhpMyGame" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lang" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PhpMyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhpMyGame" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Page" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PhpMyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhpMyGame" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PhpMyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhpMyGame" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PhpMyGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhpMyGame" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="game" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -295,14 +153,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28201000" />
+    <option name="totallyTimeSpent" value="28564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -664,30 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/default/game/menu.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="155" column="32" lean-forward="false" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Page/Buildings.Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Page/BuildingsDowngrade.Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Page/BuildingsUpgrade.Page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -726,6 +559,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
           <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup_sql/V0.0.1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page/BuildingsDowngrade.Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page/Buildingdowngrade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page/Buildings.Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/default/game/menu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="155" column="32" lean-forward="false" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
           <folding />
         </state>
       </provider>
