@@ -102,11 +102,11 @@ if ($debug)
     deb("Set Server buildings ...");
 
 $tpl = 'default';
-$page = "home";
+$page = "Home";
 
 if (isset($_GET["p"]))
-	if (file_exists("Page/" . $_GET["p"] . ".Page.php"))
-		$page = $_GET["p"];
+	if (file_exists("Page/" . ucfirst(strtolower($_GET["p"])) . ".Page.php"))
+		$page = ucfirst(strtolower($_GET["p"]));
 
 include ("Page/" . $page . ".Page.php");
 
