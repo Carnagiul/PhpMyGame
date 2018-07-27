@@ -24,6 +24,7 @@ class Sql
     public static $table_users = "users";
     public static $table_buildings = "buildings";
     public static $table_node = "Node";
+    public static $table_node_construction = "NodeConstruction";
 
     public function connect()
     {
