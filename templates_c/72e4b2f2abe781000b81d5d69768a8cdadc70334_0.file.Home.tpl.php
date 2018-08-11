@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-26 19:06:03
-  from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/Home.tpl' */
+/* Smarty version 3.1.33-dev-5, created on 2018-08-10 12:40:55
+  from '/var/www/html/AAA/templates/default/Home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b59ff7b7013f7_63804630',
+  'unifunc' => 'content_5b6d87d78f4353_57134566',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '9c2c0209953dc0521fab7b222eee7fbf59079cca' => 
+    '72e4b2f2abe781000b81d5d69768a8cdadc70334' => 
     array (
-      0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/Home.tpl',
-      1 => 1532463626,
+      0 => '/var/www/html/AAA/templates/default/Home.tpl',
+      1 => 1533904308,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b59ff7b7013f7_63804630 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b6d87d78f4353_57134566 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, "test.conf", "setup", 0);
 ?>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-26 19:03:48
-  from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/footer.tpl' */
+/* Smarty version 3.1.33-dev-5, created on 2018-08-10 12:40:55
+  from '/var/www/html/AAA/templates/default/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b59fef4b241c6_58762804',
+  'unifunc' => 'content_5b6d87d79a2929_28159365',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'e41de87becf10db5fd4de6056851652068425af3' => 
+    '85225d7b0e8f113ec4f830085b20b1fc29034883' => 
     array (
-      0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/footer.tpl',
-      1 => 1532620134,
+      0 => '/var/www/html/AAA/templates/default/footer.tpl',
+      1 => 1533904308,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b59fef4b241c6_58762804 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b6d87d79a2929_28159365 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 			<div class="row">
 				<?php

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33-dev-5, created on 2018-07-26 19:06:03
-  from '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/game/home.tpl' */
+/* Smarty version 3.1.33-dev-5, created on 2018-08-10 12:40:55
+  from '/var/www/html/AAA/templates/default/visitor/home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33-dev-5',
-  'unifunc' => 'content_5b59ff7b743e32_40291673',
+  'unifunc' => 'content_5b6d87d79854a9_50790995',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8c9cecc4e82475f14b5df87de8ab08c95426b59b' => 
+    'fa36d6644622fa5eea6f905766b07722a6f44ccf' => 
     array (
-      0 => '/Users/tonpeyre/Documents/tw/PhpMyGame/templates/default/game/home.tpl',
-      1 => 1532463626,
+      0 => '/var/www/html/AAA/templates/default/visitor/home.tpl',
+      1 => 1533904309,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b59ff7b743e32_40291673 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Users/tonpeyre/Documents/tw/PhpMyGame/smarty/libs/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),1=>array('file'=>'/Users/tonpeyre/Documents/tw/PhpMyGame/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
+function content_5b6d87d79854a9_50790995 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/AAA/smarty/libs/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),1=>array('file'=>'/var/www/html/AAA/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 <PRE>
-    You're connected IG
+    You need to connect in the game
     <?php if ($_smarty_tpl->smarty->ext->configLoad->_getConfigVariable($_smarty_tpl, 'bold')) {?><b><?php }?>
         Title: <?php echo smarty_modifier_capitalize($_smarty_tpl->smarty->ext->configLoad->_getConfigVariable($_smarty_tpl, 'title'));?>
 
